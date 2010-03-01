@@ -23,7 +23,7 @@ import Data.Maybe
 import Control.Monad
 import Data.IORef
 import qualified Data.Map as M
-import Control.Exception
+import Control.OldException
 
 import Import
 import Code

@@ -15,7 +15,9 @@
 
 module Main where
 
-import System
+import System.Cmd
+import System.Environment
+import System.Exit
 import System.IO
 import Data.Char
 import Data.List

@@ -22,7 +22,7 @@ import Parse
 import Data.Maybe
 import Control.Monad
 import System.IO
-import Data.Generics hiding ((:*:))
+import Data.Generics
 import Data.Typeable
 import Data.Generics.Basics
 import Data.Generics.Schemes

@@ -26,7 +26,7 @@ import Control.Monad
 import Control.Monad.State
 import Util
 import Marginalize
-import Data.Generics hiding ((:*:))
+import Data.Generics
 import Data.Typeable
 
 import qualified UnLift

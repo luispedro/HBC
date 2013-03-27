@@ -16,7 +16,7 @@
 module Math where
 
 import Core
-import Data.Generics hiding ((:*:))
+import Data.Generics
 import Data.Typeable
 
 

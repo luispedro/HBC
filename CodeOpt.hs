@@ -27,7 +27,7 @@ import Control.Monad
 import Control.Monad.State
 import Util
 import Code
-import Data.Generics hiding ((:*:))
+import Data.Generics
 import Data.Typeable
 import Data.Generics.Basics
 import Data.Generics.Schemes

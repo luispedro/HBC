@@ -25,7 +25,7 @@ import qualified Text.ParserCombinators.Parsec as P
 import Text.ParserCombinators.Parsec.Expr
 import Text.ParserCombinators.Parsec.Language
 import Text.ParserCombinators.Parsec.Token
-import System
+import System.Exit
 import System.IO
 import Decl
 import Control.Monad

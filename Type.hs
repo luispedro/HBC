@@ -20,7 +20,7 @@ import Data.List
 import qualified Data.Map as M
 import Control.Monad
 import Util
-import Data.Generics hiding ((:*:))
+import Data.Generics
 import Data.Typeable
 import Debug.Trace
 import Data.Maybe

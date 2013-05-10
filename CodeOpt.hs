@@ -15,22 +15,13 @@
 
 module CodeOpt where
 
-import Type
-import Core(Const(..))
 import qualified Core as C
-import qualified Data.Map as M
 import Data.Maybe
 import Data.Char
 import Data.List
-import Debug.Trace 
-import Control.Monad
-import Control.Monad.State
 import Util
 import Code
 import Data.Generics
-import Data.Typeable
-import Data.Generics.Basics
-import Data.Generics.Schemes
 
 
 opt :: Code -> Code

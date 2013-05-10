@@ -39,8 +39,8 @@ replaceNth (x:xs) n y = x : replaceNth xs (n-1) y
 
 for lo hi f = flip mapM_ [lo..hi] f
 
-boolToInt True = 1
-boolToInt False = 0
+boolToInt :: (Num a) => Bool -> a
+boolToInt = fromInteger . toInteger . fromEnum
 
 linesOn :: Char -> String -> [String]
 linesOn c s = case dropWhile (==c) s of
@@ -52,14 +52,14 @@ putStrIf   b str = when b $ putStr   str
 putStrIfLn b str = when b $ putStrLn str
 printIf    b str = when b $ print    str
 
-fst3 (a,b,c) = a
-snd3 (a,b,c) = b
-thr3 (a,b,c) = c
+fst3 (a,_,_) = a
+snd3 (_,b,_) = b
+thr3 (_,_,c) = c
 
-fst4 (a,b,c,d) = a
-snd4 (a,b,c,d) = b
-thr4 (a,b,c,d) = c
-fth4 (a,b,c,d) = d
+fst4 (a,_,_,_) = a
+snd4 (_,b,_,_) = b
+thr4 (_,_,c,_) = c
+fth4 (_,_,_,d) = d
 
 parseArg x
       | length x >= 7 &&
